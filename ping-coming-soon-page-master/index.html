@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="./css/style/style.css">
+  <script src="https://kit.fontawesome.com/427e69b628.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="heading">
+        ping<span>.</span> 
+      </div>
+      <div class="big-text">
+        We are launching <span>soon!</span>
+      </div>
+    </header>
+      <main>
+        <div class="title">
+          Subscribe and get notified
+        </div>
+        <div class="inbox">
+          <div>
+            <input type="email" placeholder="Your email address">
+            <div class="error"> <i> Please provide a valid email address </i></div>
+          </div>
+          <div class="btn" onclick="validateMe()">
+            Notify Me
+          </div>
+        </div>
+      </main>
+      <div class="photo">
+        <img src="./images/illustration-dashboard.png" alt="">
+      </div>
+      <footer>
+        <div class="social">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </div>
+      </footer>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+
+  <script>
+    const error = document.querySelector(".error");
+    function validateMe(){
+      const email = document.querySelector(`.inbox input[type="email"]`);
+      if(email.value.indexOf('@') === -1){
+        error.style.visibility = 'visible';
+        email.style.border = '1px solid hsl(354, 100%, 66%)'
+        setTimeout(() => {
+          error.style.visibility = 'hidden'
+          email.style.border = '1px solid hsl(223, 87%, 63%)'
+          email.value = ''    
+        }, 1500);
+      }    
+    }
+  </script>
+</body>
+</html>
