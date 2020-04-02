@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <link rel="stylesheet" href="./css/style/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="navbar-brand">
+          <div class="logo"><img src="./images/logo.svg" alt=""></div>
+      </div>
+      <div class="nav-link">
+        <div>Product</div>
+        <div>Features</div>
+        <div>Pricing</div>
+        <div class="login">Login</div>
+      </div>
+      <div class="mobile-nav">
+        <img src="./images/icon-hamburger.svg" alt="">
+      </div>
+      <div class="mobile-nav-link">
+        <div class="close">
+          <img src="./images/icon-close.svg" alt="">
+        </div>
+        <div>Product</div>
+        <div>Features</div>
+        <div>Pricing</div>
+        <div class="login">Login</div>
+      </div>
+    </nav>
+  <main>
+    <div class="insights">
+      <div>
+       <span class="new">New</span>
+       <span class="mono"> &nbsp;Monograph Dashboard </span>
+      </div>
+      <div class="bold">
+        Powerful insights <br>
+        into your team
+      </div>
+      <div>
+        <p>
+          Project planning and time tracking <br> for agile teams
+        </p>
+      </div>
+      <div class="bottom">
+        <button class="btn">
+          Schedule a demo
+        </button>
+        <div>
+          <p>
+            to see a preview
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="illustration">
+        <img src="./images/illustration-devices.svg" alt="">
+      </div>
+      <div class="background">
+
+      </div>
+    </main>
+  
+</div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+<script>
+  const mobNav =document.querySelector(".mobile-nav");
+  const close = document.querySelector(".close");
+
+  const mobNavlinks = document.querySelector(".mobile-nav-link");
+
+  function showmobNav(){
+    mobNavlinks.style.visibility = 'visible'
+  }
+  function closeNav(){
+    mobNavlinks.style.visibility = 'hidden'
+  }
+
+  mobNav.addEventListener('click',showmobNav);
+  close.addEventListener('click',closeNav)
+
+</script>
+</html>
