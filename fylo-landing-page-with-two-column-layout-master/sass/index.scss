@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// font-family: 'Raleway', sans-serif; Headings, Call-to-actions, Header Navigation
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+@import './color.scss';
+@import './layout.scss';
+@import './mobile.scss';
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 20px 30px;
+    font-family: 'Raleway', xsans-serif;
+    .navbar-brand {
+        .logo {
+            img {
+                width: 50%;
+            }
+        }
+    }
+    .nav-links {
+        font-weight: 400;
+
+        a {
+            text-decoration: none;
+            margin: 5px;
+            color: $VeryDarkBlue;
+        }
+    }
+}
+
+@import './desktop.scss';
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+

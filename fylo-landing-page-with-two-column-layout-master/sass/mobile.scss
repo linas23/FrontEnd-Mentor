@@ -1,0 +1,183 @@
+@media (min-width:$Mobile){
+    .container{
+        width: 100%;
+    }
+    nav{
+        padding: 20px 50px;
+    }
+    .top{
+        padding: 0px 50px;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        img{
+            padding : 50px 0px 50px 0px;
+            width: 100%;
+            height: 90%;
+        }
+        .bold{
+            color: $VeryDarkBlue;
+            font-weight: 700;
+            font-size: 1.9rem;
+            margin-bottom: 40px;
+        }
+        p{  
+            padding:0px 20px 20px 20px;
+            font-weight: 500;
+            color: $VeryDarkBlue;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+            input,button{
+                height: 45px ;
+                margin: 10px 0px;
+                border-radius: 5px;
+                outline: none;
+            }
+            button{
+                background: $BrightBlue;
+                border: none;
+                color:white;
+                font-size: 1rem;
+                font-weight: 500;
+                box-shadow: 0px 5px 5px rgb(212, 205, 205);
+            }
+            input{
+                padding: 0px 20px;
+                border: 1px solid $VeryDarkBlue;
+            }
+        }
+    }
+    .mid{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: $LightGrayishBlue;
+        position: relative;
+        .illusion{
+            width: 100%;
+            padding: 20px 20px;
+        }
+        .heading{
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: 700;
+            color: $VeryDarkBlue;
+            padding: 50px 0px 20px 0px;
+        }
+        p{
+            font-size: 1.1rem;
+            color: $VeryDarkBlue;
+            padding: 0px 50px;
+
+        }
+        .link{
+            padding: 30px;
+            text-align: center;
+            a{
+                color: $ModerateCyan;
+                font-weight: 400;
+                padding: 5px 0px;
+                text-decoration: none;
+                border-bottom: 1px solid $ModerateCyan;
+            }
+        }
+        .testimony{
+            background: white;
+            margin: 20px 20px 50px 50px;
+            padding: 15px 20px;
+            width: 80%;
+            box-shadow: 0px 5px 10px rgb(197, 190, 190);
+            img{
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+            }
+            p{
+                padding: 0px;
+                font-size: 0.9rem;
+                word-spacing: 0.2em;
+                color: $VeryDarkBlue;
+            }
+            .person{
+                padding: 15px 0px;
+                align-items: center;
+                display: flex;
+                height: 50px;
+                div{
+                    padding: 5px;
+                    margin-left: 10px;
+                    font-size: 0.8rem;
+                    span{
+                        font-size: 0.6rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .mid::before{
+        content:'';
+        position:absolute;
+        top: -50px;
+        left: 0px;
+        width: 100%;
+        height: 75px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../images/bg-curve-mobile.svg");
+    }
+    .forms{
+        background: $DesaturatedBlue;
+        color: white;
+        padding: 50px 40px;
+        text-align: center;
+        .heading{
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 10px;
+        }
+        p{
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        input,button{
+            width: 75%;
+            height: 35px;
+            margin:7px 0px;
+        }
+        input{
+            padding: 0px 15px;
+        }
+        button{
+            background: $BrightBlue;
+            outline: none;
+            border: none;
+            color: white;
+        }
+    }
+    .container footer{
+        background: $VeryDarkBlue;
+        padding: 50px 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        .info{
+            height: 60Vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .contact>div,.terms>div,.about>div{
+            margin: 15px 0px;
+        }
+        .social{
+            text-align: center;
+            i{
+                margin: 0px 10px;
+            }
+        }
+    }
+}
