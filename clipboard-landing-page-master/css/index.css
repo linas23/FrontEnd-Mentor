@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif; }
+
+.heading {
+  color: #4c545d;
+  font-weight: 700; }
+
+.subheading {
+  color: #9fabb2; }
+
+.head {
+  color: #4c545d;
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+@media (min-width: 375px) {
+  header {
+    width: 100%;
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 30px;
+    text-align: center; }
+    header .heading {
+      font-size: 2.5rem; }
+    header .subheading {
+      text-align: center;
+      padding: 15px 0px;
+      line-height: 1.5em;
+      font-size: 1.1rem; }
+    header img {
+      height: 130px;
+      width: 130px; }
+    header .btns {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column; }
+      header .btns :nth-child(odd) {
+        background-color: #26baa4; }
+      header .btns :nth-child(even) {
+        background-color: #6173ff; }
+      header .btns button {
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 5px 5px #cabdbd;
+        color: white;
+        cursor: pointer;
+        margin: 10px 0px;
+        font-size: 1.1rem;
+        font-weight: 400; }
+  main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    main img {
+      width: 100%;
+      transform: scale(0.8); }
+    main .heading {
+      padding: 20px 50px;
+      font-size: 2rem; }
+    main .subheading {
+      padding: 0px 30px 40px 30px;
+      font-size: 1.1rem; }
+    main .sideBySide .right {
+      padding: 10px 30px; }
+      main .sideBySide .right div {
+        margin-bottom: 50px; }
+      main .sideBySide .right p {
+        color: #9fabb2;
+        padding: 5px 0px; }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    .container .heading {
+      padding: 20px 50px;
+      font-size: 2rem; }
+    .container .subheading {
+      padding: 0px 40px 40px 40px;
+      font-size: 1.1rem; }
+    .container .three div {
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .container .three div p {
+        color: #9fabb2;
+        font-size: 1.3rem; }
+      .container .three div img {
+        height: 15%;
+        width: 10%; }
+  .companies {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px; }
+    .companies img {
+      width: 30%;
+      margin: 30px auto; }
+  .clipboard {
+    padding: 50px 0px 200px 0px; }
+    .clipboard .btns {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column; }
+      .clipboard .btns :nth-child(odd) {
+        background-color: #26baa4; }
+      .clipboard .btns :nth-child(even) {
+        background-color: #6173ff; }
+      .clipboard .btns button {
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 5px 5px #cabdbd;
+        color: white;
+        cursor: pointer;
+        margin: 10px 0px;
+        font-size: 1.1rem;
+        font-weight: 400; }
+  footer {
+    padding: 50px 0px;
+    background: whitesmoke;
+    text-align: center;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    justify-content: space-evenly;
+    align-items: center; }
+    footer img {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto; }
+    footer .social i {
+      margin: 0px 20px; }
+    footer .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      footer .flex div {
+        margin: 10px 0px; } }
+
+@media (min-width: 1440px) {
+  header {
+    width: 100%;
+    background-image: url("../images/bg-header-desktop.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 30px;
+    text-align: center; }
+    header .heading {
+      font-size: 3rem;
+      width: 80%;
+      margin: 0 auto; }
+    header .subheading {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 15px 0px;
+      line-height: 1.5em;
+      font-size: 1.1rem; }
+    header img {
+      height: 150px;
+      width: 150px; }
+    header .btns {
+      width: 40%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      header .btns :nth-child(odd) {
+        background-color: #26baa4; }
+      header .btns :nth-child(even) {
+        background-color: #6173ff; }
+      header .btns button {
+        width: 50%;
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 5px 5px #cabdbd;
+        color: white;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 1.1rem;
+        font-weight: 400; }
+  main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    main img {
+      width: 100%;
+      transform: scale(1); }
+    main .heading {
+      padding: 20px 50px;
+      font-size: 2.5rem; }
+    main .subheading {
+      width: 60%;
+      margin: 0 auto;
+      padding: 0px;
+      font-size: 1.2rem; }
+    main .sideBySide {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      grid-gap: 10vw;
+      padding: 100px 0px; }
+      main .sideBySide .computer {
+        width: 100%;
+        transform: scale(1.4, 1.2); }
+      main .sideBySide .right {
+        padding: 10px 30px; }
+        main .sideBySide .right div {
+          margin-bottom: 50px; }
+        main .sideBySide .right p {
+          width: 70%;
+          color: #9fabb2;
+          padding: 5px 0px; }
+    main .accessimg {
+      width: 50%;
+      margin: 50px 0px;
+      transform: scale(1); }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+    .container .heading {
+      padding: 20px 50px;
+      font-size: 2.5rem; }
+    .container .subheading {
+      padding: 0px 40px 40px 40px;
+      font-size: 1.2rem; }
+    .container .three {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .container .three div {
+        width: 30%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+        .container .three div p {
+          color: #9fabb2;
+          font-size: 1.3rem; }
+        .container .three div img {
+          height: 40px;
+          width: 50px; }
+  .companies {
+    border: 2 px solid green;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 100px 0px;
+    grid-gap: 5vw; }
+    .companies img {
+      width: 100%; }
+  .clipboard {
+    padding: 25px 0px 100px 0px; }
+    .clipboard .subheading {
+      width: 70%;
+      margin: 0 auto; }
+    .clipboard .btns {
+      width: 40%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .clipboard .btns :nth-child(odd) {
+        background-color: #26baa4; }
+      .clipboard .btns :nth-child(even) {
+        background-color: #6173ff; }
+      .clipboard .btns button {
+        width: 50%;
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 5px 5px #cabdbd;
+        color: white;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 1.1rem;
+        font-weight: 400; }
+  footer {
+    padding: 70px 50px;
+    background: whitesmoke;
+    text-align: center;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left; }
+    footer img {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto; }
+    footer .social {
+      text-align: right; }
+      footer .social i {
+        margin: 0px 20px; }
+    footer .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      footer .flex div {
+        margin: 10px 0px; } }
