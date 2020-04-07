@@ -1,0 +1,240 @@
+@media screen and(min-width:375px){
+    header{
+        @include c;
+        padding: 25px 0px;
+        display:flex;
+        justify-content: space-between; 
+        align-items: center;
+        .logo{
+            img{
+                width: 70%;
+            }
+        }
+        button{
+            @include btn;
+            width: 20%;
+            height: 35px;
+            background: white;
+            border: 2px solid var(--pink);
+            color: var(--pink);
+            text-transform: capitalize;
+        }
+     }
+     
+     .community{
+         text-align: center;
+         padding: 100px 50px;
+         
+         p{
+             padding: 30px 15px;
+             font-size: 1.2rem;
+             color: var(--veryDarkCyan);
+             font-weight: 600;
+         }
+ 
+         button{
+             margin: 45px 0px;
+         }
+     }
+
+     .mockup{
+        width: 90%;
+        margin: 0 auto;
+        img{
+            transform: scale(0.9);
+            width: 100%;
+        }
+    }
+    
+     .stats{
+         text-align: center;
+         height: 70vh;
+         display: grid;
+         grid-template-rows: repeat(2,1fr);
+         align-items:center;
+         padding: 100px 0px;
+         grid-gap: 5vh;
+         img{
+             transform: scale(0.8);
+         }
+         &>div{
+             width: 40%;
+             margin: 0 auto;
+             text-align: left;
+         }
+         .num{
+             font-size: 5rem;
+             font-weight: 700;
+             color: var(--veryDarkCyan);
+         }
+         p{
+             text-align: center;
+             color: grey;
+             font-weight: 600;
+             font-size: large;
+         }
+     }
+ 
+     .huddle{
+         text-align: center;
+         max-width: 100%;
+         img{
+             width: 100%;
+             transform: scale(0.8);
+         }
+         
+         &>div{
+            width: 100vw;
+             margin-bottom: 15vh;
+             p{
+                 color: var(--veryDarkCyan);
+                 padding: 30px;
+                 font-size: 1.5rem;
+             }
+            }
+             &>div:nth-child(odd){
+                flex-direction: row-reverse;
+                background-color: var(--veryPaleBlue);
+                position: relative;
+            }
+              &>div:nth-child(1)::before{
+                content:'';
+                background: url('../images/bg-section-top-mobile-1.svg')  ;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                height:100%;
+                width: 100%;
+                top: -150px;
+            }
+            &>div:nth-child(1)::after{
+                content:'';
+                background: url('../images/bg-section-bottom-mobile-1.svg') ;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                height:100%;
+                width: 100%;
+                bottom: -680px;
+                left: 0px;
+            }
+            &>div:nth-child(3)::before{
+                content:'';
+                background: url('../images/bg-section-top-mobile-2.svg') ;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                height:100%;
+                width: 100%;
+                top: -130px;
+                
+            }
+            &>div:nth-child(3)::after{
+                content:'';
+                background: url('../images/bg-section-bottom-mobile-2.svg') ;
+                position: absolute;
+                background-size: contain;
+                background-repeat: no-repeat;
+                height:100%;
+                width: 100%;
+                bottom: -650px;
+                left: 0px;
+            }
+     }
+     .ready{
+         height: 75vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         padding: 40px;
+ 
+         button{
+             margin: 40px 0px;
+         }
+ 
+     }
+     footer{
+         height: 100vh;
+         background: var(--veryDarkCyan);
+         position: relative;
+         width: 100vw;
+     }
+     footer::before{
+        content: '';
+        height:100%;
+        background: url("../images/bg-footer-top-mobile.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -60px;
+        width:100%;
+    }
+    .newsletter{
+         height: 50vh;
+         color: white;
+         padding: 50px 30px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         .head{
+             text-transform: uppercase;
+             font-size: 1.2rem;
+             font-weight: 700;
+         }
+        
+         input{
+             width: 100%;
+             height: 50px;
+             border-radius: 11px;
+             outline: none;
+             border: none;
+         }
+             .btn{
+                 margin-top: 10px;
+                text-align: right;
+                button{
+                    width: 40%;
+                    box-shadow: none;
+                    border-radius: 11px;
+                    font-size: 1.2rem;
+                   }
+               }
+           } 
+             
+     } 
+
+     .mainFooter{
+         color: white;
+         padding:20px 30px;
+         height: 50vh;
+         text-align: left;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+ 
+         .logo{
+             img{
+                 width: 80%;
+             }
+         }
+ 
+         p{
+             font-size: 1.3rem;
+         }
+         .contact{
+             img{
+                 transform: scale(1.5);
+                 margin-right: 20px;
+             }
+             &>div{
+                 margin: 20px 0px;
+             }
+             font-size: 1.2rem;
+         }
+         .social{
+             i{
+                 margin: 0px 20px 0px 0px ;
+             }
+         }
+ }
