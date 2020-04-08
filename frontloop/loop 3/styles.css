@@ -1,0 +1,81 @@
+body{
+    font-family: 'Roboto';
+}
+
+.heading{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.subheading{
+    color: rgb(170, 162, 162);
+    font-size: 0.9rem;
+}
+.total{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.bike{
+    text-transform: capitalize;
+    color: rgb(90, 90, 90);
+}
+.price{
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+body{
+    background: lightseagreen;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card{
+    height: 300px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background:white;
+    overflow: hidden;
+    line-height: 1.5em;
+}
+.cycle{
+    margin-top: -100px;
+    width: 100%;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.icon{
+    padding: 5px;
+    /* position: relative; */
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon:hover{
+    background: white;
+    box-shadow: 0px 0px 0px 5px rgb(155, 153, 153);
+}
+/* .icon::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content:'';
+    height: 40px;
+    width: 40px;
+    background: red;
+    border: 1px solid black;
+} */
