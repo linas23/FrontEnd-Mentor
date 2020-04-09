@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root{
+    //  colors
+    // ### Primary
+    --BrightRed: hsl(12, 88%, 59%);
+    --DarkBlue: hsl(228, 39%, 23%);
+    // ### Neutral
+    --DarkGrayishBlue: hsl(227, 12%, 61%);
+    --VeryDarkBlue: hsl(233, 12%, 13%);
+    --VeryPaleRed: hsl(13, 100%, 96%);
+    --VaryLightGray: hsl(0, 0%, 98%);
+}
+body{
+    font-size: 16px;
+    font-family: 'Be Vietnam', sans-serif;
+}
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+.heading{
+    color: var(--DarkBlue);
+    font-weight: 700;
+}
+.subheading{
+    color: var(--DarkGrayishBlue);
+}
+a{
+    text-decoration: none;
+}
+@mixin btn {
+    width: 150px;
+    height: 40px;
+    background: var(--BrightRed);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px rgb(177, 170, 170);
+    cursor: pointer;
+}
+button{
+    @include btn;
+}
+
+
+@import './mobile.scss';
+
+@import './desktop.scss';
