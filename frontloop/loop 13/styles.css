@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(60, 28, 241),
+    rgba(193, 28, 199, 0.733)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background-image: linear-gradient(
+    to right,
+    rgba(173, 58, 177, 0.733),
+    rgba(60, 28, 241, 0.582)
+  );
+  width: 300px;
+  height: 350px;
+  color: white;
+  display: grid;
+  grid-template-rows: 25% 55% 20%;
+}
+
+.top {
+  padding: 0px 15px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10% 80% 10%;
+  background-image: linear-gradient(
+    to right,
+    rgba(58, 177, 147, 0.733),
+    rgba(28, 145, 241, 0.582)
+  );
+}
+.top img:nth-child(1) {
+  padding: 5px;
+  background: white;
+  border-radius: 50%;
+}
+.top span,
+.bottom span {
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+.mid {
+  padding: 25px;
+  background: rgb(59, 44, 71);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bottom {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(167, 58, 177, 0.733),
+    rgba(28, 145, 241, 0.582)
+  );
+}
+
+/* .mid > div > span */
+.mid > div {
+  position: relative;
+  padding-left: 25px;
+  text-transform: capitalize;
+}
+.mid div::before {
+  content: "";
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  background: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.mid div span {
+  background: red;
+  position: relative;
+}
+.mid div:nth-child(n) span::before,
+.mid div:nth-child(n) span::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 25px;
+  display: none;
+  background: white;
+  left: -22px;
+}
+.mid div:nth-child(2) span::before {
+  top: -30px;
+  display: block;
+}
+.mid div:nth-child(2) span::after {
+  bottom: -30px;
+  display: block;
+}
+.mid div:nth-child(1) span::before {
+  bottom: 20px;
+  height: 30px;
+  display: block;
+}
+.mid div:nth-child(3) span::before {
+  bottom: -35px;
+  height: 30px;
+  display: block;
+}
+
+.bottom img {
+  padding: 5px;
+  background: white;
+  border-radius: 50%;
+}

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: rgb(63, 62, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background: rgb(240, 240, 48);
+  width: 350px;
+  padding: 40px 40px 20px 40px;
+  min-height: 60vh;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#form {
+  min-height: 65%;
+  margin: 40px 0 20px;
+  z-index: 1;
+  width: 390px;
+  background: white;
+  padding: 40px 30px;
+  box-shadow: -3px 4px 5px 0px rgb(63, 62, 62);
+}
+form {
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+  top: -50px;
+}
+.avatar img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.options {
+  text-align: right;
+}
+.options button {
+  margin-left: 25px;
+  outline: none;
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+  color: rgba(71, 69, 69, 0.815);
+  font-weight: 555;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 1px solid rgb(211, 209, 209);
+}
+label {
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: gray;
+}
+input {
+  border: none;
+  outline: none;
+  margin: 3px 0;
+}
+
+.two {
+  display: flex;
+}
+.two .input {
+  flex: 1;
+}
+
+textarea {
+  border: none;
+}
