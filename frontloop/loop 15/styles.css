@@ -40,13 +40,15 @@ main {
   position: absolute;
   right: 0;
   text-align: right;
-  background: yellow;
+  background: rgba(255, 255, 0, 0.76);
   width: 25vw;
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-blend-mode: darken;
 }
 .num {
   font-size: 3rem;

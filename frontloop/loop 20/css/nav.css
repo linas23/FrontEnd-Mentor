@@ -1,0 +1,37 @@
+nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 10% 20% 40% 20% 10%;
+  align-items: center;
+}
+.logo img,
+.avatar img {
+  width: 50%;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.search {
+  position: relative;
+  width: 100%;
+}
+
+.search input {
+  width: 80%;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.search .fa-search {
+  position: absolute;
+  right: 30px;
+}

@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Loop 3 - Step 6</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loop 3 - Step 6</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="breadcrumbs">
+        <span>Cart - Customer Information - Shiping Method</span> - Payment
+        Method
+      </div>
+      <div class="chocholate">
+        <div class="top">
+          <div class="thumbnail">
+            <img src="./img/order.jpg" alt="" />
+            <span>
+              2
+            </span>
+          </div>
+          <div class="name">
+            Chocholate bar
+          </div>
+          <div class="price">$2.49</div>
+        </div>
+        <hr />
+        <div class="mid">
+          <div>
+            <h5>
+              Subtotal
+            </h5>
+            <h5>$4.98</h5>
+          </div>
+          <div>
+            <h5>Shipping</h5>
+            <h5>$3.00</h5>
+          </div>
+        </div>
+        <hr />
+        <div class="bottom">
+          <h5>Total</h5>
+          <h5 class="total">$7.98</h5>
+        </div>
+      </div>
+      <div class="payment">
+        <div class="title">Payment information</div>
+        <div class="input">
+          <label for="card number">card number</label>
+          <input
+            name="card number"
+            type="password"
+            placeholder="**** **** **** ****"
+          />
+        </div>
+        <div class="below">
+          <div class="input">
+            <label for="card holder">card holder</label>
+            <input
+              name="card holder"
+              type="text"
+              placeholder="Michael Jordan"
+            />
+          </div>
+          <div class="input">
+            <label for="date">exp. date</label>
+            <input type="text" name="date" placeholder="03/119" />
+          </div>
+          <div class="input">
+            <label for="cvc">cvc </label>
+            <input type="password" placeholder="***" />
+          </div>
+        </div>
+      </div>
+      <div class="billing">
+        <div class="title">
+          Billing address
+        </div>
+        <div class="option">
+          <input type="checkbox" />
+          <label>Same as the shipping address</label>
+        </div>
+        <hr />
+        <div class="option">
+          <input type="checkbox" />
+          <label for="">Use a different billing address</label>
+        </div>
+      </div>
+      <div class="bottom">
+        <div>
+          Return to shipping method
+        </div>
+        <div>
+          <button>
+            Complete order
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

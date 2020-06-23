@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  height: 70vh;
+  width: 23%;
+  border-radius: 23px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  height: 97%;
+  width: 95%;
+  background: white;
+  border-radius: 23px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashed {
+  position: absolute;
+  background: royalblue;
+  height: 50%;
+  width: 150%;
+  top: 0;
+  transform: translateY(-90px) translateX(-10px) rotate(23deg);
+}
+.black {
+  position: absolute;
+  height: 30px;
+  background: black;
+  width: 50%;
+  border-radius: 8px;
+  left: 50%;
+  top: -7px;
+  transform: translateX(-50%);
+}
+
+.main {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: grid;
+  grid-template-rows: 15% 40% 50%;
+  align-items: center;
+  height: 90%;
+}
+
+.main .title {
+  color: white;
+  text-transform: uppercase;
+}
+.bank {
+  text-align: right;
+  font-size: 1.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main .creditcard img {
+  width: 90%;
+}
+.switches {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 15px;
+  text-align: left;
+}
+.switch {
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  align-items: center;
+  color: gray;
+}
+
+.switch .title {
+  color: black;
+  font-weight: bold;
+}
+
+.switchee {
+  position: relative;
+  height: 33px;
+  width: 60px;
+  display: inline-block;
+}
+.switchee input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ccc;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+.slider::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  height: 30px;
+  width: 28px;
+  background: #ccc;
+  box-shadow: 0 0 2px black;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.switchee input:checked + .slider {
+  background: royalblue;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider::before {
+  background: royalblue;
+  transform: translateX(25px);
+}
