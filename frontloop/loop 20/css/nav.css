@@ -1,10 +1,9 @@
 nav {
   width: 80%;
   margin: 0 auto;
-  height: 10vh;
+  height: 12vh;
   display: grid;
   grid-template-columns: 10% 20% 40% 20% 10%;
-  align-items: center;
 }
 .logo img,
 .avatar img {
@@ -12,14 +11,9 @@ nav {
 }
 hr {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(160, 156, 156, 0.534);
 }
 
-.links {
-  display: flex;
-  justify-content: space-between;
-  text-transform: capitalize;
-}
 .search {
   position: relative;
   width: 100%;
@@ -34,4 +28,50 @@ hr {
 .search .fa-search {
   position: absolute;
   right: 30px;
+}
+.logo,
+.search,
+.links,
+.notifications,
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(128, 128, 128, 0.534);
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+.links .link {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+.links .link:hover {
+  transform: translateY(-8px);
+  transition: all 0.5s ease;
+}
+
+/* home links */
+.homelinks {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+.homelinks .link {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.homelinks .link:hover,
+.homelinks .active {
+  transition: all 0.5s ease;
+  border-bottom: 2px solid red;
+}
+.notifications {
+  display: flex;
+  justify-content: space-around;
 }

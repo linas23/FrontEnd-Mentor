@@ -1,0 +1,243 @@
+.top,
+.resume,
+.recommendations,
+.following {
+  padding: 20px;
+  background: white;
+}
+.top .nav,
+.recommendations .top {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .nav i,
+.recommendations .top i {
+  color: blue;
+  margin: 0px 5px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+.top .posts {
+  padding: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.top .posts .post img {
+  width: 100%;
+}
+.top .posts .post .date,
+.edu .date {
+  color: gray;
+}
+
+.resume,
+.recommendations,
+.following {
+  margin-top: 20px;
+}
+
+.resume h4 {
+  margin-bottom: 20px;
+}
+.resume .details {
+  padding: 20px 0;
+}
+.detail {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.detail .icon {
+  justify-self: center;
+  font-size: 1.25rem;
+}
+.detail .title {
+  margin: 0px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.experience .date,
+.detail p {
+  color: gray;
+}
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.experience:before,
+.edu::before {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  content: "";
+  background: white;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.experience .title,
+.experience .date,
+.edu .date,
+.edu .college {
+  margin-bottom: 5px;
+}
+
+.experience .logo {
+  width: 30%;
+}
+
+.experience .company,
+.edu .subject {
+  color: royalblue;
+}
+.edu {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.skill {
+  display: grid;
+  grid-template-columns: 10% 40% 40%;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.skill .num {
+  justify-self: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.skill .profile {
+  display: flex;
+  width: 30%;
+}
+.skill .profile .other {
+  padding: 10px;
+  align-self: center;
+  border-radius: 50%;
+  background: rgb(199, 194, 194);
+}
+.skill {
+  color: gray;
+}
+.skill .profile img {
+  margin: 5px;
+}
+.chips {
+  font-size: 0.8rem;
+  display: flex;
+}
+.chips .chip {
+  padding: 5px;
+  margin-right: 10px;
+  background: rgb(226, 220, 220);
+}
+
+.recommendations .top {
+  padding: 0px;
+}
+
+.recommendations .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: start;
+}
+.cards .card img {
+  width: 50px;
+  border-radius: 50%;
+}
+.cards .card p {
+  padding: 20px;
+  border: 1px solid gray;
+  border-bottom: none;
+  position: relative;
+}
+.cards .card p::before,
+.cards .card p::after {
+  content: "";
+  position: absolute;
+  background: gray;
+}
+.cards .card p::before {
+  height: 30px;
+  width: 1px;
+  bottom: -30px;
+  left: -1px;
+}
+.cards .card p::after {
+  width: 85%;
+  height: 1px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.card .avatar {
+  border: none;
+  margin-top: 40px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.card .avatar .name {
+  font-size: 1rem;
+}
+
+.following .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.following .cards .card .image {
+  border: 1px solid rgb(216, 212, 212);
+}
+.following .cards .card img {
+  width: 80%;
+  border-radius: 0%;
+  padding: 20px;
+}
+.following .cards .card {
+  height: 200px;
+  grid-template-rows: 60% 20% 20%;
+  display: grid;
+  align-items: center;
+}
+
+.following .cards .company {
+  color: black;
+  font-size: 1.2rem;
+}
+.following .cards .follow {
+  color: royalblue;
+}
+.following .cards .follow span {
+  padding: 5px 8px;
+  border: 1px solid royalblue;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.otherbtn {
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 23px;
+  border: 1px solid royalblue;
+  color: royalblue;
+  font-size: 1rem;
+}

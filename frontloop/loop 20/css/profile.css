@@ -1,0 +1,72 @@
+.profile {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+.profile img {
+  border-radius: 50%;
+  width: 60%;
+}
+.name {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 5px 0;
+}
+.title {
+  margin: 5px 0;
+}
+.address {
+  margin: 5px 0;
+  color: gray;
+}
+.profile button {
+  width: 80%;
+  border-radius: 23px;
+  border: none;
+  padding: 10px 0;
+  margin: 5px 0;
+  font-size: 1.05rem;
+}
+.profile button:nth-child(2n + 1) {
+  background: royalblue;
+  color: white;
+}
+.profile button:nth-child(2n) {
+  color: royalblue;
+  border: 2px solid royalblue;
+}
+.suck {
+  margin: 10px;
+}
+.connections {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  font-size: 1.2rem;
+}
+.connections .num {
+  color: black;
+  font-weight: 800;
+}
+.connections > div {
+  flex: 1;
+}
+.social {
+  color: gray;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.social > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 5px 0px;
+}
+.pdf {
+  margin: 10px 0px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}

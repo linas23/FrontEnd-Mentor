@@ -1,0 +1,37 @@
+.others span {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.others .avatars {
+  padding: 20px 0px 40px;
+}
+.avatared {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  margin: 25px 0px;
+}
+.avatared img {
+  border-radius: 50%;
+}
+.company {
+  color: gray;
+}
+
+.others .profile {
+  background: transparent;
+  position: relative;
+  width: 80%;
+}
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right {
+  right: 0px;
+}
