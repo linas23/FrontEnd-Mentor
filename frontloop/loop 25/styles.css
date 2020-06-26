@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  overflow: hidden;
+  height: 30vh;
+  background: rgb(54, 55, 148);
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px gray;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  width: 50%;
+  color: white;
+  padding: 15px;
+}
+.barchart {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+  height: 100%;
+}
+.bar {
+  background: white;
+  align-self: flex-end;
+  width: 80%;
+}
+.month {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  grid-gap: 10px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.active {
+  background: yellow;
+}
+
+.pie {
+  display: flex;
+  height: 100%;
+}
+.chart {
+  align-self: center;
+  width: 40%;
+  justify-self: center;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+span {
+  color: lightgray;
+  margin-right: 10px;
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  background: whitesmoke;
+  min-height: 100vh;
+}
+.wrapper {
+  width: 80%;
+  margin: 20px 0px;
+}
+.breadcrumbs {
+  font-weight: 700;
+}
+.breadcrumbs span {
+  color: gray;
+  font-weight: 500;
+}
+
+/* .chocholate {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  min-height: 300px;
+  grid-gap: 20px;
+  background: white;
+  width: 100%;
+}
+.top {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+}
+.top {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+ */
+.grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
