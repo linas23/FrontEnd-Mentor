@@ -1,0 +1,51 @@
+nav {
+  padding: 0px 150px;
+  height: 8vh;
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  grid-template-columns: 20% 40% 20% 20%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.61);
+}
+.links {
+  font-weight: 777;
+  display: flex;
+  justify-content: space-between;
+}
+.logo img {
+  width: 50%;
+}
+.link {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.link:hover {
+  transform: translateY(-10px);
+}
+.input {
+  justify-self: center;
+  display: flex;
+}
+.input input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+}
+.carts {
+  display: flex;
+}
+.carts > div {
+  margin: 0px 5px;
+  font-weight: 777;
+}
+.carts .cart {
+  position: relative;
+}
+.cart span {
+  position: absolute;
+  bottom: -5px;
+  left: 95%;
+  padding: 2px 4px;
+  background: yellow;
+  border-radius: 50%;
+}

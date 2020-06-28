@@ -1,23 +1,234 @@
-.icon {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  line-height: inherit;
-  display: inline-block;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(214, 213, 213);
+}
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+.wrapper {
+  width: 60%;
+  height: 90%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 25% 40% 35%;
+  background: white;
+  /* grid-gap: 10px; */
+}
+.top {
+  background-image: url("./img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.555);
+  z-index: -1;
+}
+.timeanddate {
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+.top .time {
+  font-size: 3.3rem;
+}
+.top .date {
+  text-align: right;
+  margin-right: 20px;
+}
+.weather {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 30% repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.weather .main {
+  font-size: 2rem;
+}
+.mid {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-gap: 20px;
+}
+.mid .grid,
+.mid .links,
+.bottom {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.mid {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.555);
+}
+.channel {
+  display: flex;
+  color: gray;
+  align-items: baseline;
+}
+.links {
+  align-self: flex-end;
+}
+.channel > div {
+  margin-right: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.channel > div:hover {
+  color: black;
+}
+.channel .active {
+  font-size: 2rem;
+  color: black;
+}
+.mid .programs {
+  display: flex;
+}
+.mid .icon {
+  align-self: center;
+  justify-self: center;
+}
+.mid .program {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.program .image {
+  height: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.program img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+  box-shadow: 0px 5px 10px rgba(134, 131, 131, 0.774);
+}
+.program .time {
+  margin-top: 23px;
+  color: gray;
+}
+img {
+  width: 50px;
+}
+.program img {
+  width: 100%;
+}
+.programs .active img {
+  transform: scale(1.25);
+  z-index: 1;
+}
+.program .playbtn,
+.bottom .playlist > div .image .playbtn {
+  background: rgba(0, 0, 0, 0.705);
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  display: none;
+}
+.program .image:hover .playbtn,
+.bottom .playlist > div .image:hover .playbtn {
+  display: block;
+}
+.bottom {
+  justify-items: center;
+  align-items: center;
+}
+.two {
+  justify-self: start;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 20px;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+.playlist {
+  display: flex;
+}
+.music {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 15px;
+  align-items: center;
+}
+.main .title {
+  font-weight: 700;
+}
+.main .band {
+  color: gray;
+}
+.range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+}
+.range span {
+  margin: 0px 10px;
+  height: 1px;
+  width: 100%;
+  background: gray;
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+  position: relative;
+}
+.range span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 30%;
+  left: 0%;
+  background: black;
+  transform: translateY(-50%);
+}
+.range span::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  left: 30%;
+  background: black;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.playlist > div {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+.playlist > div img {
+  width: 100%;
+}
+.playlist > div .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

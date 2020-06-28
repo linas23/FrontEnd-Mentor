@@ -1,0 +1,32 @@
+@import "nav.css";
+@import "user.css";
+@import "youmightlike.css";
+@import "fromourclients.css";
+@import "footer.css";
+@import "grid_main.css";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.breadcrumb {
+  color: gray;
+  margin: 20px 0px;
+}
+.breadcrumb span {
+  color: black;
+  font-weight: 777;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 20px;
+}

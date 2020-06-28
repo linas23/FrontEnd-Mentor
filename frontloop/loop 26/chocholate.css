@@ -1,0 +1,49 @@
+/* .chocholate > div:not(:nth-child(1)) {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin: 10px 0px;
+} */
+.chocholate {
+  padding: 20px;
+  background: white;
+  align-self: flex-start;
+}
+.chocholate .top {
+  display: grid;
+  grid-template-columns: 15% 60% 20%;
+  grid-gap: 10px;
+  font-weight: 600;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.chocholate .top .thumbnail {
+  width: 100%;
+  position: relative;
+  border: 1px solid red;
+  padding: 10px;
+  align-self: center;
+}
+.chocholate img {
+  width: 100%;
+}
+
+.thumbnail span {
+  position: absolute;
+  padding: 3px 8px;
+  top: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+}
+
+.top .price {
+  justify-self: flex-end;
+}
+.chocholate .mid > div,
+.chocholate .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+  font-weight: 600;
+}

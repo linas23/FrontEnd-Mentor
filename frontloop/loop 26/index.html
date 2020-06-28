@@ -22,6 +22,8 @@
           <div>
             <div class="payment">
               <div class="title">Payment information</div>
+              <div class="inputs">
+
               <div class="input">
                 <label for="card number">card number</label>
                 <input
@@ -39,8 +41,9 @@
                     placeholder="Michael Jordan"
                   />
                 </div>
-                <div class="input">
-                  <label for="date">exp. date</label>
+                <div class="fifty">
+                  <div class="input">
+                    <label for="date">exp. date</label>
                   <input type="text" name="date" placeholder="03/119" />
                 </div>
                 <div class="input">
@@ -48,6 +51,9 @@
                   <input type="password" placeholder="***" />
                 </div>
               </div>
+              </div>
+            </div>
+
             </div>
             <div class="billing">
               <div class="title">
@@ -58,52 +64,56 @@
                 <label>Same as the shipping address</label>
               </div>
               <hr />
-              <div class="option">
-                <input type="checkbox" />
+              <div class="option" >
+                <input checked type="checkbox"class="red" />
                 <label for="">Use a different billing address</label>
               </div>
             </div>
-          </div>
-          <div class="chocholate">
-            <div class="top">
-              <div class="thumbnail">
-                <img src="./img/order.jpg" alt="" />
-                <span>
-                  2
-                </span>
-              </div>
-              <div class="name">
-                Chocholate bar
-              </div>
-              <div class="price">$2.49</div>
-            </div>
-            <div class="mid">
+            <div class="gridbottom">
               <div>
-                <h5>
-                  Subtotal
-                </h5>
-                <h5>$4.98</h5>
+                Return to shipping method
               </div>
               <div>
-                <h5>Shipping</h5>
-                <h5>$3.00</h5>
+                <button>
+                  Complete order
+                </button>
               </div>
             </div>
-            <div class="bottom">
-              <h5>Total</h5>
-              <h5 class="total">$7.98</h5>
+          </div>
+
+            <div class="chocholate">
+              <div class="top">
+                <div class="thumbnail">
+                  <img src="./img/order.jpg" alt="" />
+                  <span>
+                    2
+                  </span>
+                </div>
+                <div class="name">
+                  Chocholate bar
+                </div>
+                <div class="price">$2.49</div>
+              </div>
+              <hr>
+              <div class="mid">
+                <div>
+                  <h5>
+                    Subtotal
+                  </h5>
+                  <h5>$4.98</h5>
+                </div>
+                <div>
+                  <h5>Shipping</h5>
+                  <h5>$3.00</h5>
+                </div>
+              </div>
+              <hr>
+              <div class="bottom">
+                <h5>Total</h5>
+                <h5 class="total">$7.98</h5>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="bottom">
-        <div>
-          Return to shipping method
-        </div>
-        <div>
-          <button>
-            Complete order
-          </button>
         </div>
       </div>
     </main>

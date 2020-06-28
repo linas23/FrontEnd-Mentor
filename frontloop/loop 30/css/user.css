@@ -1,0 +1,45 @@
+.profile {
+  margin-top: 60px;
+}
+.avatar {
+  position: relative;
+  display: inline-block;
+}
+.avatar span {
+  position: absolute;
+  bottom: -10px;
+  left: 55%;
+  padding: 5px 8px;
+  background: yellow;
+  border-radius: 50%;
+}
+.profile h4 {
+  margin: 15px 0px;
+}
+
+.proposals span,
+.choices span {
+  color: gray;
+  text-transform: uppercase;
+}
+
+.proposal {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-gap: 20px;
+  font-weight: 777;
+  padding: 15px 0px;
+  margin: 5px 0px;
+}
+.first {
+  border-right: 2px solid yellow;
+}
+.choices {
+  margin-top: 30px;
+}
+.choice {
+  display: grid;
+  grid-template-columns: 10% 50% 20%;
+  grid-gap: 20px;
+  font-weight: 777;
+}
