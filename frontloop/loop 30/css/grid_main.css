@@ -44,7 +44,7 @@
   border-radius: 23px;
   border: none;
   text-transform: uppercase;
-  background: yellow;
+  background: rgba(255, 174, 0, 0.897);
   padding: 5px 10px;
 }
 .detail .title {
@@ -56,30 +56,162 @@
   color: gray;
 }
 
-.detail .bottom {
+.detail .wierd {
   display: flex;
+  margin: 10px 0px;
 }
-.detail .bottom > div {
-  padding: 10px 15px;
+.detail .wierd > div {
+  padding: 10px 25px;
   border: 1px solid rgb(202, 194, 194);
   font-weight: 666;
   position: relative;
 }
-.detail .bottom > div span {
+.detail .wierd > div span {
   position: absolute;
   height: 15px;
   width: 1px;
-  background: red;
+  background: gray;
   left: 15%;
   top: 50%;
   transform: translateY(-50%);
 }
-.height span::before {
+.height span::before,
+.length span::before,
+.breadth span::before {
   content: "";
-  background: blue;
+  background: gray;
   height: 5px;
   width: 1px;
   position: absolute;
   transform: rotate(90deg);
   top: -2px;
+}
+.height span::after,
+.length span::after,
+.breadth span::after {
+  content: "";
+  background: gray;
+  height: 5px;
+  width: 1px;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: -2px;
+}
+.detail .wierd > .length span {
+  transform: rotate(90deg);
+  top: 30%;
+}
+.detail .wierd > .breadth span {
+  transform: rotate(-20deg);
+  top: 30%;
+}
+
+.mid .image {
+  margin: 15px 0px;
+  position: relative;
+}
+.mid .image > img {
+  width: 100%;
+  filter: brightness(60%);
+}
+.plus {
+  position: absolute;
+  top: 10px;
+  padding: 8px 4px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.plus span {
+  border-radius: 50%;
+  background: white;
+  padding: 4px 8px;
+  font-weight: 777;
+}
+.image .one {
+  left: 50%;
+  top: 50%;
+}
+.image .two {
+  left: 70%;
+  top: 40%;
+}
+.image .three {
+  top: 60%;
+  left: 10%;
+}
+.buyall {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: white;
+  padding: 20px;
+}
+.buyall span {
+  color: gray;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.buyall .price {
+  font-size: 1.5rem;
+  font-weight: 777;
+  background-image: linear-gradient(
+    to bottom,
+    white 50%,
+    rgba(255, 166, 0, 0.795)
+  );
+  margin: 10px 0px;
+}
+.buyall button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 23px;
+  border: none;
+  background: rgba(255, 174, 0, 0.897);
+  outline: none;
+  font-weight: 666;
+  text-transform: uppercase;
+}
+.buyall button span {
+  background: white;
+  padding: 8px 10px;
+  border-radius: 50%;
+  top: 50%;
+}
+
+.image .preview {
+  position: absolute;
+  bottom: -8%;
+  left: 2%;
+  display: flex;
+}
+.image .preview img {
+  width: 100px;
+  filter: brightness(65%);
+  box-shadow: 0px 1px 5px black;
+}
+.image .preview .active {
+  filter: brightness(100%);
+  transform: scaleY(1.25);
+  margin-bottom: 8px;
+}
+.main .bottom {
+  margin: 50px 0px;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main .bottom .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main .bottom .box .title {
+  font-weight: 666;
+}
+.main .bottom .box .more .icon {
+  color: black;
+  padding: 6px 10px;
+  border: 1px solid gray;
+  display: inline;
+  border-radius: 50%;
 }

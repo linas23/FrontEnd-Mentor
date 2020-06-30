@@ -1,0 +1,28 @@
+footer {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  margin: 20px 0px;
+}
+footer img {
+  width: 40%;
+  justify-self: start;
+}
+footer .company {
+  color: gray;
+  font-size: 0.8rem;
+  text-align: center;
+}
+footer .links {
+  margin: 20px 0px;
+}
+footer .link {
+  cursor: pointer;
+}
+footer .icons {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10px;
+  position: relative;
+}
