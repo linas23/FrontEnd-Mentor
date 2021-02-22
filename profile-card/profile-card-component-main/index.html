@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    .container{
+      background: hsl(185, 75%, 39%);
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .main{
+      width:30vw;
+      display: grid;
+      grid-template-rows: 25% 75%;
+      background: whitesmoke;
+      height: 65vh;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .topPattern{
+      position: absolute;
+      left:-300px;
+      top:-600px;
+    }
+    
+    .bottomPattern{
+      position: absolute;
+      right:-300px;
+      bottom:-600px;
+    }
+
+    .background img{
+      width: 100%;
+    }
+    
+    .whiteBackground{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+      text-align: center;
+    }
+    .whiteBackground img{
+      border-radius: 50%;
+      border: 10px solid white;
+    }
+    .whiteBackground .image{
+      padding-bottom: 15px;
+    }
+    .nameNage{
+      width: 40%  ;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .name{
+      font-weight: 800;
+      color: black;
+      font-size: 1.5rem;
+    }
+    .age{
+      color: gray;
+      font-size: 2rem;
+    }
+    .address{
+      color: gray;
+      font-size: 1.5rem;
+    }
+    .report{
+
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .k{
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .text{
+      font-size: 1rem;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topPattern">
+      <img src="./images/bg-pattern-top.svg" alt="">
+    </div>
+    <div class="bottomPattern">
+      <img src="./images/bg-pattern-bottom.svg" alt="">
+    </div>
+    <div class="main">
+      <div class="background">
+        <img src="./images/bg-pattern-card.svg" alt="">
+      </div>
+      <div class="whiteBackground">
+        <div class="image">
+          <img src="./images/image-victor.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="nameNage">
+
+            <div class="name">
+  Victor Crest
+
+            </div>
+            <div class="age">
+  26
+
+            </div>
+          </div>
+          <div class="address">
+            London
+
+          </div>
+          <div class="report">
+            
+            <div class="details">
+              <div class="k">
+  80K
+
+              </div>
+              <div class="text">
+  Followers
+
+              </div>
+            </div>
+            <div class="details">
+              <div class="k">
+    803K
+
+  </div>
+              <div class="text">
+  Likes
+
+              </div>
+            </div>
+            <div class="details">
+              <div class="k">
+  1.4K
+
+              </div>
+              <div class="text">
+  Photos
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
